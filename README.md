@@ -13,6 +13,12 @@ And build with
 npm run build
 ```
 
+Or simply with: 
+```js
+npx about_me
+```
+
+
 # **Customization**
 
 There are many customizable aspects in about-me: 
