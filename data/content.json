@@ -1,0 +1,129 @@
+{
+  "menu": {
+    "nameFont": "https://fonts.googleapis.com/css2?family=PT+Mono&display=swap",
+    "name": "Andrea Facchini",
+    "top": "Top",
+    "about": "About Me",
+    "experience": "Experience",
+    "education": "Education",
+    "portfolio": "Personal Works",
+    "pagetitle": "Andrea Facchini"
+  },
+  "header": {
+    "title": "I am Andrea Facchini!",
+    "content": "And this is my personal page!",
+    "button": "Discover",
+    "cover": "NIOBE-final.jpg"
+  },
+  "about": {
+    "cover": "IMG_20210126_113936.jpg",
+    "title": "Ciao!",
+    "content": "I'm Andrea and I am a Software Engineer!<br> I always have been passionated by technology and I created this page as a showcase for my work. I come from Italy, I currently live in France and I also spent some months in Sweden. Always enthusiast, I'm a real team player, going for the lead. Professionally I'm proactive and hard-working, with a strong client-oriented mindset and always ready to pick new challenges. On the technical side, i'm proficient in many languages and technologies, and I'm always ready to learn more. On the internet community I'm an active member of stack overflow (check the link!) and I published some on my personal projects (like this one!) on github. You got a job proposition, a collaboration or you just want to reach out? You'll find all my contact information below!"
+  },
+  "links": {
+    "linkedin": {
+      "url": "https://www.linkedin.com/in/andrea-facchini/"
+    },
+    "github": {
+      "url":"https://github.com/AndreF010203"
+    },
+    "stackoverflow": {
+      "url":"https://stackoverflow.com/users/11829408/greedo"
+    },
+    "mail": {
+      "url":"mailto:andrea.facchini.io@gmail.com"
+    }
+  },
+  "time": {
+    "years": "years",
+    "year": "year",
+    "months": "months",
+    "month": "month"
+  },
+  "experiences": [
+    {
+      "companyname": "Altran",
+      "companylogo": "altran.svg", 
+      "companysite": "https://www.altran.com/fr/fr/", 
+      "location": "Sophia Antipolis (FR)",
+      "jobtitle": "Consultant Software Engineer",
+      "timespan": "Jan 2020 - present",
+      "datestart": "01/2020",
+      "dateend": "",
+      "description": "Consultant software engineer for different clients:<br><ul><li><a href='https://amadeus.com/' target='_blank'><b><u>Amadeus</b></u></a>: Full stack developer of a B2B software platform widely used in the airline environment. Complex product, handled by a large agile team with a strong technical culture, involving code reviews and QA validations.<br><br>Main technologies: <ul><li>Frontend: Javascript with Angular and AriaFramework, JSP, HTML, CSS</li><li>Backend: Java</li><li>Others: automated testing (Jasmine, JUnit), git, maven</li></ul></li><br><li><a href='https://www.orange.fr/portail' target='_blank'><b><u>Orange</b></u></a>: Front end developer for the Orange Ads Service library. Small Kanban team and TDD, with a strong focus on performances, quality and reliability of the code. Often in pair programming. French speaking environment.<br>Main Technologies: <ul><li>Javascript</li><li>Automated testing and deployment with Gitlab CI/CD</li></ul></ul>"
+    },
+    {
+      "companyname": "Deloitte",
+      "companylogo": "deloitte.png",
+      "companysite": "https://www2.deloitte.com/it/it.html", 
+      "location": "Milan (IT)",
+      "jobtitle": "Fullstack Developer - Analyst",
+      "timespan": "Jan 2019 - Jan 2020",
+      "datestart": "01/2019",
+      "dateend": "01/2020",
+      "description": "Full-stack developer and technical analyst on an IBM WebSphere Commerce -based B2B e-commerce platform for a leader Travel & Leisure company.<br><br>Main Technical responsabilities:<br><ul><li>Providing technical solutions from requirements</li><li>Sizing of development effort</li><li>Backend Stack: Java, Mysql</li><li>Frontend Stack: Javascript - JQuery, HandlebarsJS, HTML, CSS</li><li>Others: RestAPI, XML, Jenkins, Git</li></ul>Other Responsabilities:<br><ul><li>Ticket handling and resolution</li><li>Incident handling and resolution</li><li>Handling client requests</li><li>Release process in different environments</li></ul>"
+    },
+    {
+      "companyname": "Leonardo",
+      "companylogo": "leonardo.png",
+      "companysite": "https://www.leonardocompany.com/en/home", 
+      "location": "Milan (IT)",
+      "jobtitle": "R&D Engineer - Stage",
+      "timespan": "Apr 2019 - Dec 2019",
+      "datestart": "04/2019",
+      "dateend": "12/2019",
+      "description": "Stage for the Master Thesis about the creation of a simulator for an aircraft ground brake. Cross-functional engineering project involving many of Leonardo's departements.<br>The work involved:<ul><li>Analysis of experimental data using Python</li><li>Creation and validation of a physical model of the brakes using Matlab and Simulink</li><li>Translation of the model in a discrete-time C code and integration of the program in the company's testing environment</li></ul>"
+    }
+  ],
+  "education": [
+    {
+      "schoolname": "Politecnico di Milano",
+      "schoollogo": "polimi.jfif", 
+      "location": "Milan (IT)",
+      "title": "Master Degree",
+      "timespan": "Sep 2017 - Dec 2019",
+      "datestart": "09/2017",
+      "dateend": "12/2019",
+      "description": "Master fully taught in English. Thesis with at stage at Leonardo. Main courses: Databases, advanced programming, AI, system architecture, software design. Also many team projects and extra-curricular experiences: Webmaster for an association, web developer for the university, tutor for bachelor students, bachelor thesis reviewer."
+    },
+    {
+      "schoolname": "Politecnico di Milano",
+      "schoollogo": "polimi.jfif", 
+      "location": "Milan (IT)",
+      "title": "Bachelor Degree",
+      "timespan": "Sep 2014 - Sep 2017",
+      "datestart": "09/2014",
+      "dateend": "09/2017",
+      "description": "Bachelor in software engineering. Erasmus semester at Orebro Universitet, in Sweden. Main courses: Databases, Information Systems, Electronics, Economy, Physics and Mathematics. Many group project."
+    }
+  ],
+  "portfolio": {
+    "title": "Personal Portfolio",
+    "works": [
+      {
+        "url": "https://github.com/AndreF010203",
+        "title":"About me!",
+        "img": "aboutme.gif",
+        "description": "About Me is a ready-to-use responsive website for personal showcase and résumé for software engineers. Just inject your data in the json and deploy it on Git Pages or another host of your choice!"
+      },
+      {
+        "url": "https://andref010203.github.io/jQuery-Read-More/",
+        "title":"jQuery-Read-More",
+        "img": "jqrm.gif",
+        "description": "A lightweight plugin for jQuery for creating smooth 'read more' sections in text. The plugin is fully customizable by numbers of line to display, label for the read more / read less sections and ellipsis. The plugin is avaible also on NPM"
+      },
+      {
+        "url": "https://github.com/AndreF010203/pure-CSS-monochrome-checkbox",
+        "title":"pure-CSS-monochrome-checkbox",
+        "img": "csscheckbox.png",
+        "description": "A pure CSS styling for checkbox, with customizable colors. Small and simple!"
+      },
+      {
+        "url": "https://github.com/AndreF010203/winograd-convolutional-nn",
+        "title":"winograd-convolutional-nn",
+        "img": "winograd.gif",
+        "description": "The Winograd’s minimal ﬁltering algorithm is used in convolutional neural networks for reducing matrices. This is an implementation in C and OpenBLAS."
+      }
+    ]
+  }
+}

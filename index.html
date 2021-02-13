@@ -1,0 +1,248 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="<%= htmlWebpackPlugin.options.data.menu.nameFont %>" rel="stylesheet">
+
+    <title><%= htmlWebpackPlugin.options.data.menu.pagetitle %></title>
+  </head>
+
+  <body class="text-center" data-spy="scroll" data-target="#navigation">
+    <header class="navbar-background w-100 top-color">
+      <div class="container d-flex justify-content-between mb-auto py-2">
+        <div class="header-name d-flex align-items-center">
+          <h4 class="mb-0">
+            <%= htmlWebpackPlugin.options.data.menu.name %>
+          </h4>
+        </div>
+        <nav class="navbar navbar-expand-lg nav-masthead">
+          <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon">
+              <i class="fas fa-align-justify"></i>
+              <i class="fas fa-times"></i>
+            </span>
+          </button>
+          <div class="collapse navbar-collapse" id="navigation">
+            <div class="navbar-nav">
+              <a class="nav-link active" href="#top"><%= htmlWebpackPlugin.options.data.menu.top %></a>
+              <a class="nav-link" href="#about"><%= htmlWebpackPlugin.options.data.menu.about %></a>
+              <a class="nav-link" href="#experience"><%= htmlWebpackPlugin.options.data.menu.experience %></a>
+              <a class="nav-link" href="#education"><%= htmlWebpackPlugin.options.data.menu.education %></a>
+              <a class="nav-link" href="#personal"><%= htmlWebpackPlugin.options.data.menu.portfolio %></a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <div id="top" class="p-3 mx-auto mesthead-container d-flex h-100 align-items-center justify-content-center">
+      <div class="cover-size cover-container">
+        <img class="cover-size cover-img" src="imgs/<%= htmlWebpackPlugin.options.data.header.cover %>"/>
+        <div class="cover-size cover-shadow"></div>
+        <div class="cover-shadow-bottom"></div>
+      </div>
+      <main role="main" class="inner cover w-50">
+        <h1 class="cover-heading"><%= htmlWebpackPlugin.options.data.header.title %></h1>
+        <p class="lead"><%= htmlWebpackPlugin.options.data.header.content %></p>
+        <p class="lead">
+          <a href="#about" class="btn btn-lg btn-secondary"><%= htmlWebpackPlugin.options.data.header.button %></a>
+        </p>
+      </main>
+    </div>
+
+    <section id="about" class="h-auto d-flex">
+      <div class="about-container overflow-hidden">
+        <img class="about-img" src="imgs/<%= htmlWebpackPlugin.options.data.about.cover %>"/>
+      </div>
+      <div class="personal-content d-flex flex-column justify-content-center">
+        <h1><%= htmlWebpackPlugin.options.data.about.title %></h1>
+        <p>
+          <%= htmlWebpackPlugin.options.data.about.content %>
+        </p>
+        <div class="d-flex contact-icons">
+          <% if (htmlWebpackPlugin.options.data.links.linkedin) { %>
+            <a href="<%= htmlWebpackPlugin.options.data.links.linkedin.url %>" target="_blank">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          <% } %>
+          <% if (htmlWebpackPlugin.options.data.links.github) { %>
+            <a href="<%= htmlWebpackPlugin.options.data.links.github.url %>" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+          <% } %>
+          <% if (htmlWebpackPlugin.options.data.links.stackoverflow) { %>
+            <a href="<%= htmlWebpackPlugin.options.data.links.stackoverflow.url %>" target="_blank">
+              <i class="fab fa-stack-overflow"></i>
+            </a>
+          <% } %>
+          <% if (htmlWebpackPlugin.options.data.links.mail) { %>
+            <a href="<%= htmlWebpackPlugin.options.data.links.mail.url %>" target="_blank">
+              <i class="far fa-envelope"></i>
+            </a>
+          <% } %>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="container timeline">
+      <% _.each(htmlWebpackPlugin.options.data.experiences, function(experience, i){ %>
+        <div class="timeline-block">
+          <div class="timeline-img">
+            <img src="imgs/<%= experience.companylogo %>" alt="<%= experience.companyname %>">
+          </div> 
+    
+          <div class="timeline-content">
+            <div class="timeline-content-header">
+              <h2>
+                <%= experience.jobtitle %>
+              </h2>
+              <a href="<%= experience.companysite %>" target="_blank">
+                <h2 class="timeline-opacity">
+                  <%= experience.companyname %>
+                </h2>
+              </a>
+            </div>
+            <div class="timeline-detail">
+              <div class="timeline-opacity">
+                <%= experience.timespan %>
+                <span>&#8226;</span>
+                <span class="timeline-timespan" 
+                  data-start="<%= experience.datestart %>" 
+                  data-end="<%= experience.dateend %>"
+                  data-years="<%= htmlWebpackPlugin.options.data.time.years %>"
+                  data-year="<%= htmlWebpackPlugin.options.data.time.year %>"
+                  data-months="<%= htmlWebpackPlugin.options.data.time.months %>"
+                  data-month="<%= htmlWebpackPlugin.options.data.time.month %>"
+                  >
+                </span>
+              </div>
+              <div class="timeline-opacity">
+                <%= experience.location %>
+              </div>
+            </div>
+            <div class="timeline-description" data-controller="#readMore<%= i %>"><%= experience.description %></div>
+            <div id="readMore<%= i %>" class="timeline-readmore"></div>
+          </div>
+        </div>
+      <% }) %>
+    </section>
+
+    <section id="education" class="d-flex justify-content-center align-items-center">
+      <div class="sideline"></div>
+      <div class="graduation-circle">
+        <i class="fas fa-graduation-cap"></i>
+      </div>
+      <div class="sideline"></div>
+    </section>
+
+    <section class="container timeline">
+      <% _.each(htmlWebpackPlugin.options.data.education, function(education, i){ %>
+        <div class="timeline-block">
+          <div class="timeline-img">
+            <img src="imgs/<%= education.schoollogo %>" alt="<%= education.schoolname %>">
+          </div> 
+    
+          <div class="timeline-content">
+            <div class="timeline-content-header">
+              <h2>
+                <%= education.title %>
+              </h2>
+              <h2 class="timeline-opacity">
+                <%= education.schoolname %>
+              </h2>
+            </div>
+            <div class="d-flex justify-content-between">
+              <div class="timeline-opacity">
+                <%= education.timespan %>
+                <span>&#8226;</span>
+                <span class="timeline-timespan" 
+                  data-start="<%= education.datestart %>" 
+                  data-end="<%= education.dateend %>"
+                  data-years="<%= htmlWebpackPlugin.options.data.time.years %>"
+                  data-year="<%= htmlWebpackPlugin.options.data.time.year %>"
+                  data-months="<%= htmlWebpackPlugin.options.data.time.months %>"
+                  data-month="<%= htmlWebpackPlugin.options.data.time.month %>"
+                  >
+                </span>
+              </div>
+              <div class="timeline-opacity">
+                <%= education.location %>
+              </div>
+            </div>
+            <div class="timeline-description" data-controller="#readMoreEd<%= i %>"><%= education.description %></div>
+            <div id="readMoreEd<%= i %>" class="timeline-readmore"></div>
+          </div>
+        </div>
+      <% }) %>
+    </section>
+
+
+    <section id="personal" class="container">
+      <div class="my-2">
+        <h1><%= htmlWebpackPlugin.options.data.portfolio.title %></h1>
+      </div>
+      <div class="d-flex works-gallery">
+        <% _.each(htmlWebpackPlugin.options.data.portfolio.works, function(work){ %>
+          <a class="work-card" href="<%= work.url %>" target="_blank">
+            <div class="img-container">
+              <img src="imgs/<%= work.img %>"/>
+              <div class="work-card-content work-card-title"><h2><%= work.title %></h2></div>
+            </div>
+            <div data-simplebar class="work-card-content work-card-text">
+              <%= work.description %>
+            </div>
+          </a>
+        <% }) %>
+      </div>
+    </section>
+
+    <section class="mastfoot">
+      <div class="container pt-2 pb-3">
+        <a href="https://github.com/AndreF010203/about-me">
+          <b>About Me!</b>
+        </a> template by <b>Andrea Facchini</b>
+        <br>
+        <div class="d-flex contact-icons justify-content-center pb-1 pt-2">
+          <% if (htmlWebpackPlugin.options.data.links.linkedin) { %>
+            <a href="<%= htmlWebpackPlugin.options.data.links.linkedin.url %>" target="_blank">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          <% } %>
+          <% if (htmlWebpackPlugin.options.data.links.github) { %>
+            <a href="<%= htmlWebpackPlugin.options.data.links.github.url %>" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+          <% } %>
+          <% if (htmlWebpackPlugin.options.data.links.stackoverflow) { %>
+            <a href="<%= htmlWebpackPlugin.options.data.links.stackoverflow.url %>" target="_blank">
+              <i class="fab fa-stack-overflow"></i>
+            </a>
+          <% } %>
+          <% if (htmlWebpackPlugin.options.data.links.mail) { %>
+            <a href="<%= htmlWebpackPlugin.options.data.links.mail.url %>" target="_blank">
+              <i class="far fa-envelope"></i>
+            </a>
+          <% } %>
+        </div>
+        <span>
+          All Rights Reserved
+        </span>
+      </div>
+    </section>
+
+    <noscript>
+      <style>
+        /**
+        * Reinstate scrolling for non-JS clients
+        */
+        .simplebar-content-wrapper {
+          overflow: auto;
+        }
+      </style>
+    </noscript>
+  </body>
+</html>
