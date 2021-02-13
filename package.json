@@ -1,10 +1,10 @@
 {
-  "name": "about_me",
+  "name": "about-me-template",
   "version": "1.0.0",
   "description": "Fast template for personal website",
   "main": "index.js",
   "bin": {
-    "about_me": "./npx-file.js"
+    "about-me-template": "./npx-file.js"
   },
   "scripts": {
     "build": "webpack && npm run move:imgs ",
@@ -12,9 +12,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AndreF010203/about_me.git"
+    "url": "git+https://github.com/AndreF010203/about-me.git"
   },
-  "homepage": "https://andref010203.github.io/about_me/",
+  "homepage": "https://andref010203.github.io/about-me/",
   "author": "Andrea Facchini",
   "license": "MIT",
   "keywords": [

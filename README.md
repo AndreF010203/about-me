@@ -15,7 +15,7 @@ npm run build
 
 Or simply with: 
 ```js
-npx about_me
+npx about-me-template
 ```
 
 
