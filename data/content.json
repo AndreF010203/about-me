@@ -42,14 +42,25 @@
   },
   "experiences": [
     {
+      "companyname": "Symphony",
+      "companylogo": "logo-symphony-icon.jpeg", 
+      "companysite": "https://symphony.com/", 
+      "location": "Sophia Antipolis (FR)",
+      "jobtitle": "Consultant Software Engineer Frontend",
+      "timespan": "Sept 2021 - present",
+      "datestart": "09/2021",
+      "dateend": "",
+      "description": "External consultant at Symphony.com, working in the frontend team, building a fast and robust client application. Symhpny is a secure real-time messaging application focused on the finance world."
+    },
+    {
       "companyname": "Altran",
       "companylogo": "altran.svg", 
       "companysite": "https://www.altran.com/fr/fr/", 
       "location": "Sophia Antipolis (FR)",
       "jobtitle": "Consultant Software Engineer",
-      "timespan": "Jan 2020 - present",
+      "timespan": "Jan 2020 - Sept 2021",
       "datestart": "01/2020",
-      "dateend": "",
+      "dateend": "09/2021",
       "description": "Consultant software engineer for different clients:<br><ul><li><a href='https://amadeus.com/' target='_blank'><b><u>Amadeus</b></u></a>: Full stack developer of a B2B software platform widely used in the airline environment. Complex product, handled by a large agile team with a strong technical culture, involving code reviews and QA validations.<br><br>Main technologies: <ul><li>Frontend: Javascript with Angular and AriaFramework, JSP, HTML, CSS</li><li>Backend: Java</li><li>Others: automated testing (Jasmine, JUnit), git, maven</li></ul></li><br><li><a href='https://www.orange.fr/portail' target='_blank'><b><u>Orange</b></u></a>: Front end developer for the Orange Ads Service library. Small Kanban team and TDD, with a strong focus on performances, quality and reliability of the code. Often in pair programming. French speaking environment.<br>Main Technologies: <ul><li>Javascript</li><li>Automated testing and deployment with Gitlab CI/CD</li></ul></ul>"
     },
     {
